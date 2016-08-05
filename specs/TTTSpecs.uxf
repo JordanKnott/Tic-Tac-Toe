@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0-SNAPSHOT">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>310</y>
+      <w>260</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>GameManager
+--
+_- board: Board_
+- inputManager: InputManager
+- eventManager: EventManager
+--
++ getEventManager(): EventManager
++ getBoard(): Board
++ getInputManager(): InputManager
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>520</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Piece
+--
+- owner: int
+--
++ setOwner(int): void
++ getOwner(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>290</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Board
+--
+- board: Piece[3][3]
+--
++ setPiece(int x, int y, Piece piece): boolean
++ getPiece(x: int, y: int): Piece
++ resetBoard(): void
++ isEmpty(): boolean
++ isFull(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>150</y>
+      <w>260</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>InputManager
+--
+_- board: Board_
+--
++ InputManager(Board)
++ onClickCell(int x, int y): void
++ onGameReset(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>490</y>
+      <w>290</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>EventManager
+--
+_- instance: EventManager_
+- eventMap: Map&lt;Event, EventHandler&gt;
+--
+_+ getInstance(): EventManager_
++ register(Event, EventHandler): void
++ pushEvent(Event): void
++ processEvents(double delta): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>380</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>380</y>
+      <w>270</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;110.0;250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>300</y>
+      <w>270</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;250.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>420</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>110</y>
+      <w>270</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>BoardChecker
+--
+_+ checkBoard(board: Board): boolean_</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

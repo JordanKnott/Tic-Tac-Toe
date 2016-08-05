@@ -1,6 +1,8 @@
-import core.Board;
-import core.BoardChecker;
-import core.Piece;
+package net.thenightwolf.tictactoe;
+
+import net.thenightwolf.tictactoe.core.Board;
+import net.thenightwolf.tictactoe.core.BoardChecker;
+import net.thenightwolf.tictactoe.core.Piece;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

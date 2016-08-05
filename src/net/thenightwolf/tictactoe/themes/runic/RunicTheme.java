@@ -1,15 +1,15 @@
-package themes.runic;
+package net.thenightwolf.tictactoe.themes.runic;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
-import themes.Theme;
+import net.thenightwolf.tictactoe.themes.Theme;
 
 /**
  * Created by burni_000 on 8/5/2016.
  */
 public class RunicTheme extends Theme {
 
-    private String pkg = "themes/runic/";
+    private String pkg = "net/thenightwolf/tictactoe/themes/runic/";
 
     public RunicTheme(){
         super.themeName = "Runic";

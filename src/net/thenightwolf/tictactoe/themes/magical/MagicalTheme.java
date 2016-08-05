@@ -1,14 +1,14 @@
-package themes.magical;
+package net.thenightwolf.tictactoe.themes.magical;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
-import themes.Theme;
+import net.thenightwolf.tictactoe.themes.Theme;
 
 /**
  * Created by burni_000 on 8/5/2016.
  */
 public class MagicalTheme extends Theme {
-    private String pkg = "themes/magical/";
+    private String pkg = "net/thenightwolf/tictactoe/themes/magical/";
 
     public MagicalTheme(){
         super.themeName = "Magical";

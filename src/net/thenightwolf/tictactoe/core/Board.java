@@ -1,4 +1,4 @@
-package core;
+package net.thenightwolf.tictactoe.core;
 
 /**
  * Created by burni_000 on 8/4/2016.

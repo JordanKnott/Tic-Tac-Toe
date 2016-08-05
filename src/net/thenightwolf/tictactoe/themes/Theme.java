@@ -1,4 +1,4 @@
-package themes;
+package net.thenightwolf.tictactoe.themes;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;

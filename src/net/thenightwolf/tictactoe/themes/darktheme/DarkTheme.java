@@ -1,15 +1,15 @@
-package themes.darktheme;
+package net.thenightwolf.tictactoe.themes.darktheme;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
-import themes.Theme;
+import net.thenightwolf.tictactoe.themes.Theme;
 
 /**
  * Created by burni_000 on 8/5/2016.
  */
 public class DarkTheme extends Theme {
 
-    private String pkg = "themes/darktheme/";
+    private String pkg = "net/thenightwolf/tictactoe/themes/darktheme/";
 
     public DarkTheme(){
         super.themeName = "Dark";
